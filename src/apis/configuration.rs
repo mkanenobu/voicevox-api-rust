@@ -17,7 +17,6 @@ pub struct Configuration {
     pub oauth_access_token: Option<String>,
     pub bearer_access_token: Option<String>,
     pub api_key: Option<ApiKey>,
-    // TODO: take an oauth2 token source, similar to the go one
 }
 
 pub type BasicAuth = (String, Option<String>);
@@ -37,8 +36,8 @@ impl Configuration {
 impl Default for Configuration {
     fn default() -> Self {
         Configuration {
-            base_path: "http://localhost".to_owned(),
-            user_agent: Some("OpenAPI-Generator/0.14.4/rust".to_owned()),
+            base_path: "http://localhost:50021".to_string(),
+            user_agent: Some("OpenAPI-Generator/0.14.4/rust".to_string()),
             client: reqwest::Client::new(),
             basic_auth: None,
             oauth_access_token: None,

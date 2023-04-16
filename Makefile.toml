@@ -1,6 +1,6 @@
 [tasks.fmt]
 command = "cargo"
-args = ["fmt"]
+args = ["fmt", "--all"]
 
 [tasks.gen]
 command = "npx"

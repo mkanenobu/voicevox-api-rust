@@ -13,7 +13,7 @@
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct Speaker {
     #[serde(rename = "supported_features", skip_serializing_if = "Option::is_none")]
-    pub supported_features: Option<Box<crate::models::SupportedFeatures>>,
+    pub supported_features: Option<Box<crate::models::SpeakerSupportedFeatures>>,
     #[serde(rename = "name")]
     pub name: String,
     #[serde(rename = "speaker_uuid")]

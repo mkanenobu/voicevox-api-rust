@@ -359,7 +359,7 @@ pub async fn add_user_dict_word_user_dict_word_post(
     surface: &str,
     pronunciation: &str,
     accent_type: i32,
-    word_type: Option<WordTypes>,
+    word_type: Option<crate::models::WordTypes>,
     priority: Option<i32>,
 ) -> Result<String, Error<AddUserDictWordUserDictWordPostError>> {
     let local_var_configuration = configuration;
@@ -1234,7 +1234,7 @@ pub async fn rewrite_user_dict_word_user_dict_word_word_uuid_put(
     surface: &str,
     pronunciation: &str,
     accent_type: i32,
-    word_type: Option<WordTypes>,
+    word_type: Option<crate::models::WordTypes>,
     priority: Option<i32>,
 ) -> Result<(), Error<RewriteUserDictWordUserDictWordWordUuidPutError>> {
     let local_var_configuration = configuration;

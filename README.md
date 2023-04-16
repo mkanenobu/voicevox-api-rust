@@ -1,3 +1,5 @@
 # voicevox_api
 
-Voicevox API binding for rust
+VOICEVOX API binding for rust.
+
+Generated using openapi-generator and fix manually.
