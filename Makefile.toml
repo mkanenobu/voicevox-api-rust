@@ -1,0 +1,7 @@
+[tasks.gen]
+command = "npx"
+args = [
+    "@openapitools/openapi-generator-cli",
+    "generate", "-i", "http://localhost:50021/openapi.json", "-g", "rust", "-o", "./src/generated"
+]
+
