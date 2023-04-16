@@ -2,6 +2,16 @@
 name = "voicevox_api"
 version = "0.14.4"
 edition = "2021"
+license = "MIT"
+description = "VOICEVOX API binding"
+readme = "README.md"
+repository = "https://github.com/mkanenobu/voicevox-api-rust"
+include = [
+    "src/",
+    "LICENSE",
+    "README.md",
+]
+keywords = ["voicevox"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
