@@ -1,3 +1,7 @@
+[tasks.fmt]
+command = "cargo"
+args = ["fmt"]
+
 [tasks.gen]
 command = "npx"
 args = [

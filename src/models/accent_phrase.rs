@@ -10,8 +10,6 @@
 
 /// AccentPhrase : アクセント句ごとの情報
 
-
-
 #[derive(Clone, Debug, PartialEq, Default, Serialize, Deserialize)]
 pub struct AccentPhrase {
     #[serde(rename = "moras")]
@@ -19,7 +17,7 @@ pub struct AccentPhrase {
     #[serde(rename = "accent")]
     pub accent: i32,
     #[serde(rename = "pause_mora", skip_serializing_if = "Option::is_none")]
-    pub pause_mora: Option<Box<crate::models::>>,
+    pub pause_mora: Option<Box<crate::models::Mora>>,
     #[serde(rename = "is_interrogative", skip_serializing_if = "Option::is_none")]
     pub is_interrogative: Option<bool>,
 }
@@ -35,5 +33,3 @@ impl AccentPhrase {
         }
     }
 }
-
-
