@@ -6,5 +6,5 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-voicevox_api = { path = "../" }
+voicevox_api = { git = "https://github.com/mkanenobu/voicevox-api-rust" }
 tokio = { version = "1.27", features = ["full"] }
