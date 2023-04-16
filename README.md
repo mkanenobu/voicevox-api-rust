@@ -17,5 +17,9 @@ And add this to your `Cargo.toml` .
 
 ```toml
 [dependencies]
-voicevox_api = { git = "https://github.com/mkanenobu/voicevox-api-rust" }
+voicevox_api = "0.14.4"
 ```
+
+## Example
+
+https://github.com/mkanenobu/voicevox-api-rust/tree/main/example
